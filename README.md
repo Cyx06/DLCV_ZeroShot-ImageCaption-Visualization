@@ -1,31 +1,20 @@
-# DLCV-Fall-2022-HW3
+# Image Caption
 
-Please click [this link](https://docs.google.com/presentation/d/1tza5rtruvOkoComWRS79Yb7IgM_R0pGLyrI4m8Jk5Xg/edit#slide=id.g10278b72a69_0_448) to view the slides of HW3
+This project from DLCV(Deep Learing of Computer Vision) hw3.
 
-# Usage
+After excuted step shows below, the script will generate a .json file, which includ the caption for your input image.
 
-To start working on this assignment, you should clone this repository into your local machine by using the following command.
-    
-    git clone https://github.com/DLCV-Fall-2022/hw3-<username>.git
+## How to Use This Code
 
+### Prerequisites
 
-Note that you should replace `<username>` with your own GitHub username.
+1. **Install Required Packages**: 
+   ```bash
+   pip install requirements.txt
+    ```
+2. **Run script as shown below**:
+    bash hw3_2.sh $1 \$2
 
-# Submission Rules
-### Deadline
-2022/11/21 (Mon.) 23:59
+    ■ $1: path to the folder containing test images (e.g. hw3/p2_data/images/test/)
 
-### Packages
-This homework should be done using python3.8. For a list of packages you are allowed to import in this assignment, please refer to the requirments.txt for more details.
-
-You can run the following command to install all the packages listed in the requirements.txt:
-
-    pip3 install -r requirements.txt
-
-Note that using packages with different versions will very likely lead to compatibility issues, so make sure that you install the correct version if one is specified above. E-mail or ask the TAs first if you want to import other packages.
-
-# Q&A
-If you have any problems related to HW3, you may
-- Use TA hours
-- Contact TAs by e-mail ([ntudlcv@gmail.com](mailto:ntudlcv@gmail.com))
-- Post your question under hw3 FAQ section in FB group.(But TAs won't answer your question on FB.)
+    ■ $2: path to the output json file (e.g. hw3/output_p2/pred.json)
